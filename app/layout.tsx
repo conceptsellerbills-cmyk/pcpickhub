@@ -9,7 +9,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.pcpickhub.com"),
   title: { default: SITE_NAME, template: `%s | ${SITE_NAME}` },
   description: "Expert guides, reviews and tips.",
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    types: {
+      "application/rss+xml": [{ url: "/feed.xml", title: "PC Pick Hub RSS Feed" }],
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
