@@ -5,6 +5,7 @@ import NewsletterForm from '../components/NewsletterForm'
 export const metadata: Metadata = {
   title: "Best PC Builds & Component Reviews 2025 — PC Pick Hub",
   description: "Expert PC build guides, component reviews and price-to-performance rankings for all budgets.",
+  alternates: { canonical: "https://www.pcpickhub.com" },
 };
 
 const STARS = (n: number) => "★".repeat(n) + "☆".repeat(5 - n);
